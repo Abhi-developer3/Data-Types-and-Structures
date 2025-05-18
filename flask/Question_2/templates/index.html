@@ -1,0 +1,13 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Static Example</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Beautiful Picture</h1>
+
+    <img src="{{ url_for('static', filename='image.jpg') }}" alt="Example Image" width="300">
+</body>
+</html>
